@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#left{
+    font-weight:700;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+    position: relative;
+  
+}
+#left i{
+  margin-top:5px;
+  margin-left:20px ;
+  padding:9px;
+  font-size: 20px;
+}
+#lnavr{
+    display: flex;
+    gap: 100px;
+    margin: 5px 40px;
+    padding: 5px;
+    justify-content: space-between;
+}
+#lnavr i{
+    margin-top: 0px;
+    padding: 2px;
+    color: blue;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(106, 136, 175);
+}
+#rtop{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: red;
+}
+#rbottom{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(157, 119, 125);
+    background-image: url(https://images.unsplash.com/photo-1552089123-2d26226fc2b7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+   background-position:bottom;
+}
+#rtopl{
+   width: 55%;
+   height: 100%;
+   background-color:rgb(0, 0, 207);
+   background-image: url(https://images.unsplash.com/photo-1534211220810-1c6f9c76e44f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+   background-position:center;
+
+}
+#rtopr{
+   width: 45%;
+   height: 100%;
+   background-color:rgb(0, 0, 0);
+   background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+   background-position:bottom;
+}
+#text{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#text h1{
+    font-size: 80px;
+    padding-bottom: 15px;
+}
+#text p{
+    opacity: .6;
+     padding-bottom: 15px;
+
+}
+a{
+  color: black;
+  font-weight: 100;
+}
+
+@media(max-width: 500px){
+    #main{
+          flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
+
